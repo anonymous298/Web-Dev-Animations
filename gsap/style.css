@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+#box {
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
