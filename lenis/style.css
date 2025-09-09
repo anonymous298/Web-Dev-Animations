@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+div {
+    height: 100vh;
+    background-color: gray;
+    border: 5px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
