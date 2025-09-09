@@ -1,0 +1,72 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+@keyframes box {
+    from {
+        background-color: purple;
+        rotate: 0;
+        left: 0;
+    }
+
+    to {
+        background-color: cyan;
+        rotate: 360deg;
+        left: 200px;
+    }
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: purple;
+    border-radius: 15px;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.name {
+    position:relative;
+    
+}
+
+.name::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: red;
+    /* width: 10%; */
+
+}
+
+.name:hover::before {
+    animation-name: onhover;
+    animation-duration: 0.4s;
+    animation-timing-function:ease;
+}
+
+@keyframes onhover {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 10%;
+    }
+}
